@@ -1,11 +1,14 @@
 RPKI - FRRouting
 ======================================
 
+.. sectionauthor:: Emile Giot <emile.giot@student.uclouvain.be>
+.. sectionauthor:: François Duchêne <francois.duchene@student.uclouvain.be>
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   rpki_frrouting	
+   introduction	
    rpki_architecture     
    rtr
    tal
