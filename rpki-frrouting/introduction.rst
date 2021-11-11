@@ -58,4 +58,3 @@ Certification of ASes and IP prefixes by Certification Authorities via RPKIs cou
 
 For more information about RPKIs, you can consult the dedicated page :doc:`rpki_architecture`.
 
-.. bibliography::
