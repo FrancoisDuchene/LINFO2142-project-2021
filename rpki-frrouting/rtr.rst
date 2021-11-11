@@ -22,7 +22,9 @@ a cache and a router.
 * **Cache reset**: the cache can answer this PDU to a serial query to inform the router that it is unable to provide an incremental update.
 * **Error report**: the cache or the router uses this PDU to report an error to the other.
 
-The typical sequence of PDU exchanges falls in the four diagrams shown below.
+The typical sequence of PDU exchanges falls in the four diagrams shown below:
+
+.. image:: rfc8210_schemas_exchange.png
 
 
 
