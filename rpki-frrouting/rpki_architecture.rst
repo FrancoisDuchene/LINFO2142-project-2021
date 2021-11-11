@@ -20,18 +20,20 @@ For a relying party to use RPKI, it has to choose a set of trust anchors from wh
 RPKI data. According to RFC6480, an obvious choice would be the five RIRs (regional internet registries)
 which are AFRINIC, ARIN, APNIC, LACNIC and RIPE NCC.
 
-The trust anchors are contacted via rsync [#]_ 1 [#]_ using information contained in a TAL. A TAL or trust
+The trust anchors are contacted via rsync [#fn1]_ using information contained in a TAL. A TAL or trust
 anchor locator is composed of a rsync URI and a public key corresponding to a particular trust anchor as
 described in RFC6490. Here is an example:
 
-rsync://rpki.example.org/rpki/hedgehog/root.cer
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAovWQL2lh6knDx
-GUG5hbtCXvvh4AOzjhDkSHlj22gn/1oiM9IeDATIwP44vhQ6L/xvuk7W6
-Kfa5ygmqQ+xOZOwTWPcrUbqaQyPNxokuivzyvqVZVDecOEqs78q58mSp9
-nbtxmLRW7B67SJCBSzfa5XpVyXYEgYAjkk3fpmefU+AcxtxvvHB5OVPIa
-BfPcs80ICMgHQX+fphvute9XLxjfJKJWkhZqZ0v7pZm2uhkcPx1PMGcrG
-ee0WSDC3fr3erLueagpiLsFjwwpX6F+Ms8vqz45H+DKmYKvPSstZjCCq9
-aJ0qANT9OtnfSDOS+aLRPjZryCNyvvBHxZXqj5YCGKtwIDAQAB
+
+.. line-block::
+| rsync://rpki.example.org/rpki/hedgehog/root.cer
+| MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAovWQL2lh6knDx
+| GUG5hbtCXvvh4AOzjhDkSHlj22gn/1oiM9IeDATIwP44vhQ6L/xvuk7W6
+| Kfa5ygmqQ+xOZOwTWPcrUbqaQyPNxokuivzyvqVZVDecOEqs78q58mSp9
+| nbtxmLRW7B67SJCBSzfa5XpVyXYEgYAjkk3fpmefU+AcxtxvvHB5OVPIa
+| BfPcs80ICMgHQX+fphvute9XLxjfJKJWkhZqZ0v7pZm2uhkcPx1PMGcrG
+| ee0WSDC3fr3erLueagpiLsFjwwpX6F+Ms8vqz45H+DKmYKvPSstZjCCq9
+| aJ0qANT9OtnfSDOS+aLRPjZryCNyvvBHxZXqj5YCGKtwIDAQAB
 
 -------------------------
 Local caches / Validator
@@ -52,4 +54,4 @@ The communication bewteen a router and the validator is done via the RTR protoco
 
 .. rubric:: Footnotes
 
-.. [#] https://rsync.samba.org/
+.. [#fn1] https://rsync.samba.org/
