@@ -2,3 +2,4 @@
  sphinx
  sphinxcontrib-spelling
  pyenchant
+ sphinxcontrib-bibtex

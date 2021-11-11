@@ -1,0 +1,31 @@
+@inproceedings{bgphijacking2007,
+author = {Zhang, Zheng and Zhang, Ying and Hu, Y. Charlie and Mao, Z. Morley},
+title = {Practical Defenses against BGP Prefix Hijacking},
+year = {2007},
+isbn = {9781595937704},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1364654.1364658},
+doi = {10.1145/1364654.1364658},
+abstract = {Prefix hijacking, a misbehavior in which a misconfigured or malicious BGP router originates
+an IP prefix that the router does not own, is becoming an increasingly serious security
+problem on the Internet. In this paper, we conduct a first comprehensive study on
+incrementally deployable mitigation solutions against prefix hijacking. We first propose
+a novel reactive detection-assisted solution based on the idea of bogus route purging
+and valid route promotion. Our simulations based on realistic settings show that purging
+bogus routes at 20 highest-degree ASes reduces the polluted portion of the Internet
+by a random prefix hijack from 50% down to 24%, and adding promotion further reduces
+the remaining pollution by 33% ~ 57%, We prove that our proposed route purging and
+promotion scheme preserve the convergence properties of BGP regardless of the number
+of promoters. We are the first to demonstrate that detection systems based on a limited
+number of BGP feeds are subject to detection evasion by hijackers. Motivated the need
+for proactive defenses to complement reactive mitigation response, we evaluate customer
+route filtering, a best common practice among large ISPs today, and show its limited
+effectiveness. We also show the added benefits of combining route purging-promotion
+with customer route filtering.},
+booktitle = {Proceedings of the 2007 ACM CoNEXT Conference},
+articleno = {3},
+numpages = {12},
+location = {New York, New York},
+series = {CoNEXT '07}
+}

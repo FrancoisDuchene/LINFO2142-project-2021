@@ -6,6 +6,8 @@ Network configuration
 
 FRRouting is an open-source implementation 
 
+:cite:p:`bgphijacking2007`
+
 --------------------------------
 FRRouting
 --------------------------------
@@ -33,3 +35,5 @@ Mininet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 IPMininet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. bibliography::
