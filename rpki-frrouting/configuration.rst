@@ -48,6 +48,8 @@ GoRTR
 GoRTR is an implementation of a RTR server and will assure the communication between the routers and the cache.
 It contacts the OctoRPKI instance in order to retrieve the JSON file. 
 
+.. image:: octorpki_rtr_schema.png
+
 ..
 
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
