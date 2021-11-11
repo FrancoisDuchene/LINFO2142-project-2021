@@ -7,6 +7,7 @@ RPKI Architecture
 .. sectionauthor:: François Duchêne <francois.duchene@student.uclouvain.be>
 
 The deployment structure of RPKI is composed of 3 main elements.
+
 1. Trust anchors
 2. Local caches / Validator
 3. Routers
