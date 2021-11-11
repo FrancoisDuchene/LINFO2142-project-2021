@@ -8,7 +8,7 @@ A Route Origin Authorization (ROA) is a digitally signed object that allows to v
 holder has allowed an Autonomous System to annoucne one or more prefix falling in the address block.
 More precisely, the content of a ROA identifies one AS that has been authorized by the addres block holder
 to advertise route to IP prefix from this address block. If the block holder wants to authorize multiple ASs
-to advertise the same prefix, it has to issue multiple ROAs.
+to advertise the same prefix, it has to issue multiple ROAs :cite:p:`RFC6482`.
 
 A ROA follows the following structure:
     RouteOriginAttestation ::= SEQUENCE {

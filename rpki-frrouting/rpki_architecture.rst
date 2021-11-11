@@ -18,7 +18,7 @@ Trust anchors
 The trust anchors are a set of servers on which the authorative data of the RPKI are published.
 For a relying party to use RPKI, it has to choose a set of trust anchors from which it will retreive the
 RPKI data. According to RFC6480, an obvious choice would be the five RIRs (regional internet registries)
-which are AFRINIC, ARIN, APNIC, LACNIC and RIPE NCC.
+which are AFRINIC, ARIN, APNIC, LACNIC and RIPE NCC :cite:p:`RFC6490`.
 
 The trust anchors are contacted via rsync [#fn1]_ using information contained in a TAL. A TAL or trust
 anchor locator is composed of a rsync URI and a public key corresponding to a particular trust anchor as

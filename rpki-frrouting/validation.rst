@@ -16,26 +16,27 @@ can have 3 different outcomes: valid, unknown or invalid. The validation process
 
 The table below summurizes the procedure:
 
-Route    matching  non-matching
-      Prefix   AS->   AS         AS
-       V           +---------+---------+
-      Non-         | unknown | unknown |
-      Intersecting |         |         |
-                   +---------+---------+
-      Covering     | unknown | unknown |
-      Aggregate    |         |         |
-                   +---------+---------+
-      match ROA    | valid   | invalid |
-      prefix       |         |         |
-                   +---------+---------+
-      More         |         |         |
-      Specific     | invalid | invalid |
-      than ROA     |         |         |
-                   +---------+---------+
+
++---------------+-----------+--------------+
+| Route  AS->   | matching  | non-matching |
+| Prefix        | AS        |   AS         |
++===============+===========+==============+
+| Non-          | unknown   | unknown      |
+| Intersecting  |           |              |
++---------------+-----------+--------------+
+| Covering      | unknown   | unknown      |
+| Aggregate     |           |              |
++---------------+-----------+--------------+
+| match ROA     | valid     | invalid      |
+| prefix        |           |              |
++---------------+-----------+--------------+
+| More Specific | invalid   | invalid      |
+| than ROA      |           |              |
++---------------+-----------+--------------+
 
 Once the validation is done, it can be applyed to the route selection process. The preference order should be
 the following: "valid" is to be preferred over "unknown", which is to be preferred over "invalid". However,
 the action to be taken for an "unknown" or "invalid" route's validity state is a matter of local routing 
 policy.
-As mentionned in RFC6483, it is recommended to not consider "unknown" validity state as sufficient ground 
+As mentionned in RFC6483 :cite:p:`RFC6483`, it is recommended to not consider "unknown" validity state as sufficient ground 
 to reject a route from futher consideration due to the partial use of ROAs.
